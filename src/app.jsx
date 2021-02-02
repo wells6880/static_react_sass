@@ -3,9 +3,6 @@ import flag from '@/assets/img/flag.png'
 import './app.scss';
 
 export default function() {
-    const obj = {
-        
-    }
 
     return (
         <div className="app">
