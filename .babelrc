@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-regenerator", // 支持生成器语法
+        [
+            "@babel/plugin-proposal-decorators", // 支持class语法
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties", // 支持class新属性
+            {
+                "loose": true // babel编译时，对class的属性采用赋值表达式，而不是Object.defineProperty（更简洁）
+            }
+        ]
+    ]
+}
